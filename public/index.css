@@ -392,7 +392,7 @@ button:hover{
   #rlogo{
     width: 4vh;
     height: 4vh;
-    border-width: 2.25px;
+    border-width: 2px;
     margin-top: 0.75vh;
   }
   #company{
@@ -482,7 +482,12 @@ button:hover{
   #table_instr{
     top:85vh;
     font-size: 2vw;
-    left: 40vw;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*left: 40vw;*/
   }
 
   #instr{
