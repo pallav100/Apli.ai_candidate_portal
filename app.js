@@ -129,5 +129,5 @@ var server = http.createServer(function(req,res){
 // console.log(typeof tools.save_grade); // => 'function'
 // console.log(typeof tools.ques_fill);
 var port = 3000;
-server.listen(port);
+server.listen(process.env.PORT|| port);
 console.log('running');
