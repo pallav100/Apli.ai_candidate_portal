@@ -89,6 +89,17 @@ var insert_radar = function () {
 		}
 	});
 };
+function show_chart() {
+  // console.log('vvv00');
+    if(document.getElementById('candidate').classList.contains('ll'))
+      { document.getElementById('candidate').classList.remove('ll');
+  document.getElementById('view_chart').src = " ./resources/chart.png" ; }
+  else{
+    document.getElementById('candidate').classList.add('ll');
+    document.getElementById('view_chart').src = " ./resources/cross.png" ; 
+    // document.getElementById('candidate').style.backgroundColor = "rgba(248, 176, 46,1)";
+  }
+}
 
 function filltable() {
 
@@ -122,6 +133,7 @@ function fillwindow() {
 	document.getElementById('candidate_dp').src = candidate_data.dp;
 	document.getElementById('cname').innerHTML = candidate_data.cname;
 	document.getElementById('rlogo').src = candidate_data.clogo;
+    document.getElementById('view_chart').addEventListener("click", show_chart);
 
 	insert_radar();
 	filltable();

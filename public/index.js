@@ -90,13 +90,13 @@ var insert_radar = function () {
     labels: ["O", "C", "E", "A", "N"],
     datasets: [{
       label: "Candidate",
-      // backgroundColor: "rgba(255, 242, 0, 0.5)",
+      backgroundColor: "transparent",
       borderColor: "rgba(200,0,0,0.6)",
       fill: false,
       radius: 4,
       // pointRadius: 2,
       pointBorderWidth: 3,
-      lineBackgroundColor: "red",
+      lineBackgroundColor: "rgba(200,0,0,0.6)",
       pointBackgroundColor: "#502f7e",
       pointBorderColor: "blue",
       pointHoverRadius: 8,
@@ -105,9 +105,11 @@ var insert_radar = function () {
   };
   // Chart.defaults.global.elements.line.borderWidth = 10;
   // Chart.defaults.global.elements.line.backgroundColor = rgba(0,0, 10, 0.2);
-  Chart.defaults.global.defaultFontColor = 'red';
+  Chart.defaults.global.defaultFontColor = 'rgba(200,0,0,0.6)';
   Chart.defaults.global.defaultFontFamily = "sans-serif";
-
+Chart.defaults.scale.gridLines.color = "rgba(0,0,0,0.2)"; 
+console.log(Chart.defaults);
+// Chart.defaults.scale.ticks.major.fontColor = "rgba(0,0,0,0.2)"; 
 
   var radarChart = new Chart(radarCanvas, {
     type: 'radar',
@@ -131,7 +133,8 @@ var insert_radar = function () {
           stepSize: 1
         },
         pointLabels: {
-          fontSize: 15
+          fontSize:15,
+
 
         }
       },
@@ -155,16 +158,20 @@ var quesfill = function () {
   var queslist = candidate_data.response;
   console.log(queslist.length);
   document.getElementById('ques').innerHTML = queslist[0].ques;
+    document.getElementById('vid_cont').src = candidate_data.response[0].ans_link;
+
   var prevques = function () {
     var ele = document.getElementById('ques');
     var curr = parseInt(ele.classList[0]);
     console.log(curr);
     if (curr > 1) {
+      ele.innerHTML = queslist[curr-2].ques;
+            document.getElementById('vid_cont').src = candidate_data.response[curr-2].ans_link;
       prev = String(curr - 1);
       curr = String(curr);
       ele.classList.remove(curr);
       ele.classList.add(prev);
-      ele.innerHTML = queslist[prev - 1].ques;
+
 
       var stars = document.getElementsByClassName('checked');
       while (stars.length)
@@ -176,16 +183,21 @@ var quesfill = function () {
     }
   };
   var nextques = function () {
+    // document.getElementById('nextdiv').toogleClass('click_anim');
     var ele = document.getElementById('ques');
     var curr = parseInt(ele.classList[0]);
     console.log(curr);
 
     if (curr < queslist.length) {
+      ele.innerHTML = queslist[curr].ques;
+      document.getElementById('vid_cont').src = candidate_data.response[curr].ans_link;
+
       next = String(curr + 1);
       curr = String(curr);
       ele.classList.remove(curr);
       ele.classList.add(next);
-      ele.innerHTML = queslist[curr].ques;
+      
+
     }
     var stars = document.getElementsByClassName('checked');
     while (stars.length)
@@ -193,6 +205,7 @@ var quesfill = function () {
 
     document.getElementById('comment').value = "";
     console.log(ele.classList);
+
   };
 
   document.getElementById('prev').addEventListener("click", prevques);
@@ -216,13 +229,14 @@ function setInitialButtonState() {
 }
 
 function show_chart() {
-  if(document.getElementById('chart_cont').classList.contains('hidem'))
-  { document.getElementById('chart_cont').classList.remove('hidem');
-    document.getElementById('candidate').style.backgroundColor = "rgba(248, 176, 46,0.92)";
-  }
+  // console.log('vvv00');
+    if(document.getElementById('candidate').classList.contains('ll'))
+  { document.getElementById('candidate').classList.remove('ll');
+  document.getElementById('view_chart').src = " ./resources/chart.png" ; }
   else{
-    document.getElementById('chart_cont').classList.add('hidem');
-    document.getElementById('candidate').style.backgroundColor = "rgba(248, 176, 46,1)";
+    document.getElementById('candidate').classList.add('ll');
+    document.getElementById('view_chart').src = " ./resources/cross.png" ; 
+    // document.getElementById('candidate').style.backgroundColor = "rgba(248, 176, 46,1)";
   }
 
 }
@@ -244,8 +258,10 @@ function fillwindow() {
   document.getElementById('candidate_dp').src = candidate_data.dp;
   document.getElementById('cname').innerHTML = candidate_data.cname;
   document.getElementById('rlogo').src = candidate_data.clogo;
+
   quesfill();
   insert_radar();
+
   document.getElementById('save_button').addEventListener("click", updateButtonMsg);
   document.getElementById('save_button').addEventListener("click", save_grade);
   document.getElementById('view_chart').addEventListener("click", show_chart);

@@ -1,48 +1,48 @@
 {
    "name":"Pallav Soni",
    "dp":"./resources/dp.png",
-   "cname":"Upwork",
+   "cname":"Upwork Pvt.Ltd",
    "clogo":"https://s3.amazonaws.com/clarityfm-production/attachments/15782/default/Untitled_design_(55).png?1492805681",
    "response":[
       {
          "ques":"Tell us about yourself ?",
-         "ans_link":"https://www.youtube.com/embed/qqbekQ7MPEI",
+         "ans_link":"https://www.youtube.com/embed/pMRO2dl9z3w",
          "comment":"",
          "grade":-1
       },
       {
-         "ques":"What are hte projects you have worked on ?",
-         "ans_link":"https://www.youtube.com/embed/jtNATLWPipc",
+         "ques":"What are the projects you have worked on ?",
+         "ans_link":"https://www.youtube.com/embed/7WJ-lqDM040",
          "comment":"",
          "grade":-1
       },
       {
          "ques":"What technologies do you like and why ?",
-         "ans_link":"https://www.youtube.com/embed/qqbekQ7MPEI",
+         "ans_link":"https://www.youtube.com/embed/yrw16gSTgpc",
          "comment":"",
          "grade":-1
       },
       {
          "ques":"why do you want to join our company?",
-         "ans_link":"https://www.youtube.com/embed/qqbekQ7MPEI",
+         "ans_link":"https://www.youtube.com/embed/E5mgxCiWB84",
          "comment":"",
          "grade":-1
       },
       {
-         "ques":"How are you different from any other candidate?",
-         "ans_link":"https://www.youtube.com/embed/qqbekQ7MPEI",
+         "ques":"What makes you different from any other candidate ?",
+         "ans_link":"https://www.youtube.com/embed/jHVortDe8x0", 
+         "comment":"",
+         "grade":-1
+      },
+      {
+         "ques":"Why should we hire you ?",
+         "ans_link":"https://www.youtube.com/embed/Dr1O2lzD6nI",
          "comment":"",
          "grade":-1
       },
       {
          "ques":"What do you do in your free time ?",
-         "ans_link":"https://www.youtube.com/embed/qqbekQ7MPEI",
-         "comment":"",
-         "grade":-1
-      },
-      {
-         "ques":"John",
-         "ans_link":"https://www.youtube.com/embed/qqbekQ7MPEI",
+         "ans_link":"https://www.youtube.com/embed/uefRX6_295Y",
          "comment":"",
          "grade":-1
       }

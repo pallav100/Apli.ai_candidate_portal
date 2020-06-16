@@ -33,15 +33,15 @@
   /*box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);*/
   /*border: 0;*/
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
 }
 .submit-button:hover, .submit-button:focus {
   /*box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);*/
 }
 .submit-button.animated {
-  -webkit-animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
-          animation: 0.75s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  -webkit-animation: 0.3s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
+          animation: 0.3s short-press cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 .submit-button > span {
   display: block;
@@ -49,15 +49,13 @@
   text-align: center;
 }
 .submit-button > span.pre-state-msg {
-  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  -webkit-transition-delay: .2s;
-   transition-delay: .2s;
+  -webkit-transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+  /*-webkit-transition-delay: .1s;*/
+   /*transition-delay: .1s;*/
 }
 .submit-button.state-1 .pre-state-msg {
   margin-top: -22px;
-    /*font-size: 1.75vw;*/
-
 }
 .pre-state-msg,.done-state-msg{
 	margin-top:4.5px;
