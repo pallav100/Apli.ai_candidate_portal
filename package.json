@@ -22,6 +22,6 @@
   "homepage": "https://github.com/pallav100/Apli.ai_candidate_portal#readme", 
   "engines": {
     "node": "10.10.0",
-    "npm":"3.5.2"
+    "npm":"6.4.1"
   }
 }
