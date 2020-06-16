@@ -375,18 +375,20 @@ button:hover{
   #main{
   flex-direction:column; }
   nav{
-    height: 5vh;
+    height: 6vh;
   }
 
   #rlogo{
-    width: 4vh;
-    height: 4vh;
+    /*width: 6vh;*/
+    /*height: 6vh;*/
   }
   #candidate{
     position: fixed;
-    height: 7vh;
+    height: 7.75vh;
     width: 97vw;
-    padding-bottom: 0;
+    padding-top:1vh;
+        padding-bottom:1vh;
+
 
     z-index: 2;
     transition: all 1s linear;
@@ -404,8 +406,8 @@ button:hover{
   #cand_info{
     display: flex;
     position:fixed;
-    top:6vh;
-    height: 6vh;
+    /*top:6vh;*/
+    /*height: 7vh;*/
     flex-direction: column;
     justify-content: space-around;
     align-items:center;
@@ -415,8 +417,8 @@ button:hover{
     margin-top:0vh;
   }
   #candidate_dp{
-    width: 30px;
-    height: 30px;
+    width: 5.5vh;
+    height: 5.5vh;
   }
   #candidate_name{
     font-size:10px;
@@ -432,7 +434,7 @@ button:hover{
   }
   #quesdiv{
     width:55vw;
-    height: 9vh;
+    height: 10vh;
     /*height:10vh;*/
     /* background-color:white; */
     text-align: center;
@@ -443,17 +445,19 @@ button:hover{
   #vid_ans{
     width: 98vw;
     margin-left: 1vw;
-    /*margin-top: 1vh;*/
+    margin-top: 1vh;
     position: fixed;
-    top:13.5vh;
-    height: 78vh;
+    top:16vh;
+    height: 82vh;
 
   }
 
   #prevdiv,#nextdiv{
   padding-top:3vh;  
   }
-  #ans{}
+  #ans{
+    margin-top: 5vh;
+  }
 /*background-color: cyan;  }*/
   #ques{
     /* width:50vw; */
@@ -463,9 +467,7 @@ button:hover{
     width: 80vw;
     height: 30vh;
   }
-  #grading{
-    
-  }
+
   #comment_box{
     margin-top: 3vh;
   }
