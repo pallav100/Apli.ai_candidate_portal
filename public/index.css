@@ -380,6 +380,9 @@ margin-top: 4%;
 button:hover{
   cursor: pointer;
 }
+#instr,#table_instr,#title{
+  display: none;
+}
 
 
 @media screen and (max-width: 500px) {
@@ -487,7 +490,9 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*left: 40vw;*/
+
+
+    color:#fff;    /*left: 40vw;*/
   }
 
   #instr{
@@ -564,7 +569,8 @@ margin-right: 4vw;     /*height:10vh;*/
     font-size: 3vh;
   }
   .fa{
-    margin-right: 5vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
   }
 
 }
