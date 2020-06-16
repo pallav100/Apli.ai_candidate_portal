@@ -1,0 +1,50 @@
+{
+  "name": "Pallav Soni",
+  "dp": "./resources/dp.png",
+  "cname": "Upwork",
+  "clogo": "https://s3.amazonaws.com/clarityfm-production/attachments/15782/default/Untitled_design_(55).png?1492805681",
+  "response": [
+    {
+      "ques": "Tell us about yourself ?",
+      "ans_link": "https://www.youtube.com/embed/qqbekQ7MPEI",
+      "comment": "a",
+      "grade": 3
+    },
+    {
+      "ques": "What are hte projects you have worked on ?",
+      "ans_link": "https://www.youtube.com/embed/jtNATLWPipc",
+      "comment": "svf",
+      "grade": 5
+    },
+    {
+      "ques": "What technologies do you like and why ?",
+      "ans_link": "https://www.youtube.com/embed/qqbekQ7MPEI",
+      "comment": "fegr",
+      "grade": 3
+    },
+    {
+      "ques": "why do you want to join our company?",
+      "ans_link": "https://www.youtube.com/embed/qqbekQ7MPEI",
+      "comment": "vvv",
+      "grade": 5
+    },
+    {
+      "ques": "How are you different from any other candidate?",
+      "ans_link": "https://www.youtube.com/embed/qqbekQ7MPEI",
+      "comment": "",
+      "grade": 3
+    },
+    {
+      "ques": "What do you do in your free time ?",
+      "ans_link": "https://www.youtube.com/embed/qqbekQ7MPEI",
+      "comment": "fff",
+      "grade": 1
+    },
+    {
+      "ques": "John",
+      "ans_link": "https://www.youtube.com/embed/qqbekQ7MPEI",
+      "comment": "",
+      "grade": 3
+    }
+  ]
+}

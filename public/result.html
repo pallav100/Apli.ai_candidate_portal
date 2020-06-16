@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title> Apli.ai </title>
+  </head>
+  <link rel="stylesheet" href="./result.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./button.css">
+  <script type="text/javascript" src="./result.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <body>
+    <nav>
+      <img id="llogo" class = "logo" src="./resources/logo.png" alt="Apli.ai">
+      <div id="company">
+        <img id="rlogo" class="logo" alt="companylogo">
+        <p id="cname"></p>
+      </div>
+    </nav>
+    <div id="main">
+      <div id="candidate">
+        <div id="cand_info">
+          <img id="candidate_dp">
+          <h3 id="candidate_name"></h3>
+        </div>
+        <div id="chart_cont">
+          <canvas id = "chart_canvas" width="250" height="200"> </canvas>
+        </div>
+        <button id="view_chart">o</button>
+      </div>
+      <!-- </div> -->
+      <div id="vid_ans">
+        <div id="slider">
+          <div id="titlediv"><span id="ques" class="1">Result</span></div>
+        </div>
+        <div id="table_cont">
+          <table id="result_table">
+            <thead>
+              <tr>
+                <th>Question</th>
+                <th>Grading</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p id="extra_cont"> hii </p>
+  </body>
+</html>

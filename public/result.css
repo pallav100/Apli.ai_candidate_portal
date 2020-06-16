@@ -1,0 +1,83 @@
+
+#table_cont{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+overflow-y: scroll;
+height: 70vh;
+}
+#titlediv{
+    width:60vw;
+  height:10vh;
+  /* background-color:white; */
+  text-align: center;
+  padding-top:3vh;
+}
+#vid_ans{
+  height: 98vh;
+}
+table {
+  /*display: none;*/
+  font-size: 1.25vw;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 98%;
+
+  /*background-color:red;*/
+      table-layout: fixed;
+
+}
+thead th{
+  position: sticky;
+  top:0;
+}
+th,
+td {
+  padding: 6px 9px;
+}
+th {
+  background: #42444e;
+  color: #fff;
+  text-align: center;
+  }
+tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+  text-align:center;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+td {
+  border-right: 1px solid #c6c9cc;
+  border-bottom: 1px solid #c6c9cc;
+}
+td:first-child {
+  border-left: 1px solid #c6c9cc;
+}
+tr:nth-child(even) td {
+  background: #eaeaed;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+tr td:nth-child(2),td:nth-child(3){
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  #titlediv{
+    width:98vw;
+    height: 7vh;
+  }
+  #table_cont{
+    height: 60vh;
+  }
+  table{
+    font-size: 1.25vh;
+  }
+  #vid_ans{
+    height:77.5vh;
+  }
+}

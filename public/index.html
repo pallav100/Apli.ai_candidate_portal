@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title> Apli.ai </title>
+  </head>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.21.2/jquer1`y.min.js"></script> -->
+  <!-- <script type="text/javascript" src="./resources/candidate_data.json"></script> -->
+  <script type="text/javascript" src="./index.js"></script>
+  <body>
+    <nav>
+      <img id="llogo" class = "logo" src="./resources/logo.png" alt="Apli.ai">
+      <div id="company">
+        <img id="rlogo" class="logo" alt="companylogo">
+        <p id="cname"></p>
+      </div>
+    </nav>
+    <!-- <h1>My First Heading</h1>
+      <p>My first paragraph.</p> -->
+    <div id="main">
+      <div id="candidate">
+        <div id="cand_info">
+          <img id="candidate_dp">
+          <h3 id="candidate_name"></h3>
+        </div>
+        <div id="chart_cont" class="hidem">
+          <canvas id = "chart_canvas" width="250" height="200"> </canvas>
+        </div>
+<!--       <div id="cand_info">
+ -->       <img id="view_chart" class="logo" src="./resources/images.png" alt="companylogo">
+
+        <!-- <p id="view_chart"><i class="arrow down"></i></p> -->
+      </div>
+      <div id="vid_ans">
+        <div id="slider">
+          <div id="prevdiv"><span id="prev" href="#" class="previous round">&#8249;</span></div>
+          <div id="quesdiv"><span id="ques" class="1">This is your ques</span></div>
+          <div id="nextdiv"><span id="next" class="next round">&#8250;</span></div>
+        </div>
+        <div id="ans">
+          <!-- <video controls="true"> -->
+          <iframe id="vid_cont"  src="https://www.youtube.com/embed/jtNATLWPipc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>   
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          <!-- Your browser does not support the video tag. -->
+          <!-- </video> -->
+        </div>
+        <!-- </div> -->
+        <div id="grading">
+          <span id="s1" class="fa fa-star"></span>
+          <span id="s2" class="fa fa-star"></span>
+          <span id="s3" class="fa fa-star"></span>
+          <span id="s4" class="fa fa-star"></span>
+          <span id="s5" class="fa fa-star"></span>
+        </div>
+        <div id="comment_box">
+          <textarea type="text" placeholder="Comment..." id="comment" name="commentbox"></textarea>
+        </div>
+        <div class="save_box">
+          <button id="save_button" class="button_style submit-button state-0"><span class="pre-state-msg">Submit</span><span class="current-state-msg hide">saving</span><span class="done-state-msg hide">&#10003</span></button>
+        </div>
+      </div>
+    </div>
+    <div id="result_popup">
+      <div id="choice_text"> <span>Are you done ?</span></div>
+      <div id="choices">
+        <div class="save_box">
+          <button id="edit_button" class="button_style opt1"><span style="font-size: 16px;text-align: center;">Edit</span></button>
+        </div>
+        <div class="save_box">
+          <button id="result_button" class="button_style opt2"><span style="font-size: 16px;text-align: center;">Result</span></button>
+        </div>
+      </div>
+    </div>
+    <div id="fallback"></div>
+    <p id="extra_cont"> hii </p>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "apli_employer_portal",
+  "version": "1.0.0",
+  "description": "candidate filtering portal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallav100/Apli.ai_candidate_portal.git"
+  },
+  "keywords": [
+    "apli"
+  ],
+  "author": "pallav soni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pallav100/Apli.ai_candidate_portal/issues"
+  },
+  "homepage": "https://github.com/pallav100/Apli.ai_candidate_portal#readme",
+  "dependencies": {
+    
+  },
+  "engines": {
+    "node": "8.10.0",
+    "npm":"3.5.2"
+  }
+}
