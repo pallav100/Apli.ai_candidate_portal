@@ -1,5 +1,6 @@
 # Apli.ai_candidate_portal
 A simple,elegant and responsive webpage designed to provide faster candidate evaluation and filtering for organised recruitment.
+
 1.The webpage displays the recuiting company logo and name on top right corner. 
 2.The candidate profile pic and name are displayed on left pan in desktop view and middle pan in mobile view. 
 3.The questions along with video are displayed, rate acc. and comment if required and click submit button. Repeat the same for each question. 
